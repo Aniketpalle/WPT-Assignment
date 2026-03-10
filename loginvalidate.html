@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+        <script>
+            function validateIt(){
+                let result, namev, agev
+                let v=document.forms["form1"]["sname"].value
+                if(v.trim() == "" || v.length < 2 || !isNaN(v))
+                {
+                    alert("the name should contain atleat 2 characters and cant be null")
+                    document.forms["form1"]["sname"].focus()
+                    namev = false
+                }
+                else 
+                {
+                    namev = true
+                }
+             
+                let v1=document.forms.form1.sage.value
+                if(age < 18)
+                {
+                    agev = false
+                    alert("Age should be greater than 18")
+                    document.forms.form1.sage.focus()             
+                }
+                else 
+                
+                    agev = true
+                
+                return namev && agev
+            }
+        </script>
+
+        <body>
+
+            <form name="form1" onsubmit="return validateIt()" action=" ">
+            Name:<input type="text" name="sname"/><br><br>
+            Age:<input type="number" name="sage"/>
+            <input type="submit" value="submit" />
+            </form>
+        </body>
+</html>

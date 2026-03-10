@@ -1,0 +1,20 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p id="home">waiting for message</p><br><br>
+<button onclick="start()">click me</button>
+<script>
+    function showMessage()
+    {
+        document.getElementById("home").innerHTML="hello  displaying after 3 seconds";
+    }
+
+    function start(){
+        setTimeout(showMessage,3000);
+    }
+</script>
+        
+    </body>
+</html>

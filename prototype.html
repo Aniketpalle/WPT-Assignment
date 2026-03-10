@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+
+        <h2>object prototype example</h2>
+        <button onclick="showData()">print objects</button> 
+        <p id="output"></p>
+        <script>
+            function person(name,age){
+                this.name=name;
+                this.age=age;
+            }
+            person.prototype.print=function(){
+                return "NAME:" +this.name + " ,AGE:" +this.age;
+            };
+ var person1=new person("Abc",22);
+ var person2=new person("Abc1",92);
+
+ function showData(){
+    document.getElementById("output").innerHTML=
+    person1.print()+"<br>"+person2.print();
+ }
+
+            
+        </script>
+    </body>
+</html>
