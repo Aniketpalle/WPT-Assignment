@@ -1,0 +1,32 @@
+[
+  {
+    "prodid": 101,
+    "productName": "biscuit",
+    "price": 50
+  },
+  {
+    "prodid": 102,
+    "productName": "pencil",
+    "price": 540
+  },
+  {
+    "prodid": 103,
+    "productName": "pen",
+    "price": 550
+  },
+  {
+    "prodid": 104,
+    "productName": "notebook",
+    "price": 560
+  },
+  {
+    "prodid": 104,
+    "productName": "eraser",
+    "price": 570
+  },
+  {
+    "prodid": 107,
+    "productName": "biscuit",
+    "price": 50
+  }
+]
